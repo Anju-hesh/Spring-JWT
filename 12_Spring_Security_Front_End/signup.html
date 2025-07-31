@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Sign Up</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f0f0f0; }
+        .container { max-width: 300px; margin: 100px auto; padding: 20px; background: white; border-radius: 6px; box-shadow: 0 0 10px #ccc; }
+        input, select { width: 100%; padding: 10px; margin: 8px 0; }
+        button { width: 100%; padding: 10px; background: #28a745; border: none; color: white; cursor: pointer; }
+        button:hover { background: #218838; }
+        .message { margin-top: 10px; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required minlength="6" />
+        <select id="role" required>
+            <option value="">Select Role</option>
+            <option value="USER">User</option>
+            <option value="ADMIN">Admin</option>
+        </select>
+        <button type="submit">Register</button>
+        <p class="message" id="message"></p>
+    </form>
+    <p>Already have an account? <a href="index.html">Login here</a></p>
+</div>
+
+<script src="auth.js"></script>
+<script>
+    document.getElementById('signupForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const messageElem = document.getElementById('message');
+        messageElem.textContent = '';
+        messageElem.className = '';
+
+        const username = document.getElementById('username').value.trim();
+        const password = document.getElementById('password').value.trim();
+        const role = document.getElementById('role').value;
+
+        if (!username || !password || !role) {
+            messageElem.textContent = 'Please fill all fields correctly.';
+            messageElem.className = 'error';
+            return;
+        }
+
+        try {
+            const response = await fetch('http://localhost:8080/auth/register', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ username, password, role })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                messageElem.textContent = data.data || 'Registration successful!';
+                messageElem.className = 'success';
+
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 2000);
+            } else {
+                const errData = await response.json();
+                messageElem.textContent = errData.data || 'Registration failed.';
+                messageElem.className = 'error';
+            }
+        } catch (err) {
+            messageElem.textContent = 'Error: ' + err.message;
+            messageElem.className = 'error';
+        }
+    });
+</script>
+</body>
+</html>

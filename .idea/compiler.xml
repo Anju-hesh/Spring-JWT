@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="08_Spring_WebMVC" />
+        <module name="03_DI_With_Spring" />
+        <module name="04_FullModeVsLightMode" />
+        <module name="07_Spring_Env" />
+        <module name="09_RESTController" />
+        <module name="05_Configurations" />
+        <module name="02_Spring_Bean_Life_Cycle" />
+        <module name="06_Runtime_Value_Injection" />
+        <module name="01_Spring_core" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.38/57f8f5e02e92a30fd21b80cbd426a4172b5f8e29/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="O13_Spring_Security_With_JWT.main" />
+      </profile>
+      <profile name="Annotation profile for 13_Spring_Secyrity_With_JWT" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="Back_End" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="O13_Spring_Security_With_JWT" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Back_End" options="-parameters" />
+      <module name="O13_Spring_Secyrity_With_JWT" options="-parameters" />
+    </option>
+  </component>
+</project>
