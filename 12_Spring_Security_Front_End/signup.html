@@ -5,15 +5,93 @@
     <meta charset="UTF-8" />
     <title>Sign Up</title>
     <style>
-        body { font-family: Arial, sans-serif; background: #f0f0f0; }
-        .container { max-width: 300px; margin: 100px auto; padding: 20px; background: white; border-radius: 6px; box-shadow: 0 0 10px #ccc; }
-        input, select { width: 100%; padding: 10px; margin: 8px 0; }
-        button { width: 100%; padding: 10px; background: #28a745; border: none; color: white; cursor: pointer; }
-        button:hover { background: #218838; }
-        .message { margin-top: 10px; }
-        .error { color: red; }
-        .success { color: green; }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 320px;
+            padding: 30px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        input::placeholder {
+            color: #e0e0e0;
+        }
+
+        select {
+            color: #fff;
+        }
+
+        select option {
+            color: #000;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: rgba(40, 167, 69, 0.8);
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: rgba(33, 136, 56, 0.9);
+        }
+
+        .message {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .error {
+            color: #ff4d4d;
+        }
+
+        .success {
+            color: #00ff88;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
     </style>
+
 </head>
 <body>
 <div class="container">
