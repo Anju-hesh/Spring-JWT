@@ -2,11 +2,8 @@ package lk.ijse.gdse72.config;
 
 import lk.ijse.gdse72.bean.A;
 import lk.ijse.gdse72.bean.B;
-import lk.ijse.gdse72.bean.SpringBeanOne;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
 
 @Configuration
 //@Import({AppConfig2.class})

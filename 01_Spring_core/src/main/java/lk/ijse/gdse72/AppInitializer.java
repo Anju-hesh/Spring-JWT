@@ -2,7 +2,6 @@ package lk.ijse.gdse72;
 
 import lk.ijse.gdse72.bean.MyConnection;
 import lk.ijse.gdse72.bean.SpringBean;
-import lk.ijse.gdse72.test.TestBean1;
 import lk.ijse.gdse72.bean.TestBean2;
 import lk.ijse.gdse72.bean.TestBean3;
 import lk.ijse.gdse72.config.AppConfig;

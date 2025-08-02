@@ -1,6 +1,5 @@
 package lk.ijse.gdse72.controller;
 
-import jakarta.servlet.annotation.MultipartConfig;
 import lk.ijse.gdse72.dto.CustomerDTO;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;

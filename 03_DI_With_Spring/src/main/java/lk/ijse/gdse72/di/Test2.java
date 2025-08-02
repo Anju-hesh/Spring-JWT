@@ -1,6 +1,5 @@
 package lk.ijse.gdse72.di;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

@@ -4,7 +4,6 @@ import lk.ijse.gdse72.bean.SpringBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.ImportResource;
 
 @Configuration
 @Import({AppConfig1.class , AppConfig2.class})

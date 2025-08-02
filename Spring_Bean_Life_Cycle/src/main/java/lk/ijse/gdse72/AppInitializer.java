@@ -1,7 +1,5 @@
 package lk.ijse.gdse72;
 
-import lk.ijse.gdse72.bean.MyConnection;
-import lk.ijse.gdse72.bean.SpringBean;
 import lk.ijse.gdse72.config.AppConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

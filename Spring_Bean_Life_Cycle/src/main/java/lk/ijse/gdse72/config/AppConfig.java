@@ -1,7 +1,6 @@
 package lk.ijse.gdse72.config;
 
 import lk.ijse.gdse72.bean.MyConnection;
-import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

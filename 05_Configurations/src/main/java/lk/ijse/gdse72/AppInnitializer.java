@@ -1,10 +1,6 @@
 package lk.ijse.gdse72;
 
-import lk.ijse.gdse72.bean.SpringBeanOne;
-import lk.ijse.gdse72.bean.SpringBeanTwo;
 import lk.ijse.gdse72.config.AppConfig;
-import lk.ijse.gdse72.config.AppConfig1;
-import lk.ijse.gdse72.config.AppConfig2;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class AppInnitializer {

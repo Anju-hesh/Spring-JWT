@@ -24,7 +24,7 @@
         </processorPath>
         <module name="O13_Spring_Security_With_JWT.main" />
       </profile>
-      <profile name="Annotation profile for 13_Spring_Secyrity_With_JWT" enabled="true">
+      <profile name="Annotation profile for 14_Spring_Testing" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -32,6 +32,17 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
         </processorPath>
         <module name="Back_End" />
+        <module name="O13_Spring_Secyrity_With_JWT" />
+      </profile>
+      <profile name="Annotation profile for O14_Spring_Testing" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="O14_Spring_Testing" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -42,6 +53,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Back_End" options="-parameters" />
       <module name="O13_Spring_Secyrity_With_JWT" options="-parameters" />
+      <module name="O14_Spring_Testing" options="-parameters" />
     </option>
   </component>
 </project>

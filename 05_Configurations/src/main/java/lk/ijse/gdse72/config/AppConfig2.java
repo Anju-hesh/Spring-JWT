@@ -2,7 +2,6 @@ package lk.ijse.gdse72.config;
 
 import lk.ijse.gdse72.bean.C;
 import lk.ijse.gdse72.bean.D;
-import lk.ijse.gdse72.bean.SpringBeanTwo;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

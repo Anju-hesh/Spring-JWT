@@ -3,9 +3,6 @@ package lk.ijse.gdse72;
 import lk.ijse.gdse72.config.AppConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import java.util.Map;
-import java.util.Properties;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class AppInitializer {
